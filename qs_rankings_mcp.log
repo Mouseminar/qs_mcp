@@ -1,0 +1,164 @@
+2025-12-05 18:01:07,812 - mcp_server - INFO - 查询可用年份
+2025-12-05 18:01:07,812 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 18:01:07,826 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 18:01:07,827 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 18:01:07,828 - mcp_server - INFO - 开始大学搜索: keyword=MIT, year=2026
+2025-12-05 18:01:07,832 - mcp_server - INFO - 大学搜索完成: 找到 5 所大学
+2025-12-05 18:01:07,836 - mcp_server - INFO - 开始排名查询: year=2026, country=None, top_n=10
+2025-12-05 18:01:07,838 - mcp_server - INFO - 排名查询完成: 2026年全球前10名
+2025-12-05 18:01:07,841 - mcp_server - INFO - 开始排名查询: year=2026, country=CN, top_n=10
+2025-12-05 18:01:07,844 - mcp_server - INFO - 排名查询完成: 2026年CN前10名
+2025-12-05 18:01:07,847 - mcp_server - INFO - 开始国家统计: year=2026, top_n=10
+2025-12-05 18:01:07,853 - mcp_server - INFO - 国家统计完成: 2026年共106个国家/地区
+2025-12-05 18:01:07,856 - mcp_server - INFO - 开始国家平均分对比: year=2026, top_n=10
+2025-12-05 18:01:07,861 - mcp_server - INFO - 国家平均分对比完成: 2026年前10个国家
+2025-12-05 18:01:07,863 - mcp_server - INFO - 开始排名变化查询: year=2026, top_n=10, direction=rise
+2025-12-05 18:01:07,872 - mcp_server - INFO - 排名变化查询完成: 2026年排名上升前10
+2025-12-05 18:01:07,873 - mcp_server - INFO - 开始 Top 100 分布查询: year=2026
+2025-12-05 18:01:07,875 - mcp_server - INFO - Top 100 分布查询完成: 2026年涉及22个国家/地区
+2025-12-05 18:01:07,878 - mcp_server - INFO - 开始综合统计: year=2026
+2025-12-05 18:01:07,884 - mcp_server - INFO - 综合统计完成: 2026年
+2025-12-05 18:01:07,887 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 18:01:07,888 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:20:50,184 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:20:50,184 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:20:50,195 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:20:50,198 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:20:50,199 - mcp_server - INFO - 开始大学搜索: keyword=MIT, year=2026
+2025-12-05 19:20:50,203 - mcp_server - INFO - 大学搜索完成: 找到 5 所大学
+2025-12-05 19:20:50,205 - mcp_server - INFO - 开始排名查询: year=2026, country=None, top_n=10
+2025-12-05 19:20:50,207 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:20:50,209 - mcp_server - INFO - 开始排名查询: year=2026, country=CN, top_n=10
+2025-12-05 19:20:50,214 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:20:50,218 - mcp_server - INFO - 开始国家统计: year=2026, top_n=10
+2025-12-05 19:20:50,225 - mcp_server - INFO - 国家统计完成: 2026年共106个国家/地区
+2025-12-05 19:20:50,226 - mcp_server - INFO - 开始国家平均分对比: year=2026, top_n=10
+2025-12-05 19:20:50,232 - mcp_server - INFO - 国家平均分对比完成: 2026年前10个国家
+2025-12-05 19:20:50,233 - mcp_server - INFO - 开始排名变化查询: year=2026, top_n=10, direction=rise
+2025-12-05 19:20:50,238 - mcp_server - INFO - 排名变化查询完成: 2026年排名上升前10所
+2025-12-05 19:20:50,240 - mcp_server - INFO - 开始 Top 100 分布查询: year=2026
+2025-12-05 19:20:50,245 - mcp_server - INFO - Top 100 分布查询完成: 2026年涉及22个国家/地区
+2025-12-05 19:20:50,247 - mcp_server - INFO - 开始综合统计: year=2026
+2025-12-05 19:20:50,253 - mcp_server - INFO - 综合统计完成: 2026年
+2025-12-05 19:20:50,255 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:20:50,256 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:23:28,761 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:23:28,761 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:23:28,771 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:23:28,772 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:23:28,773 - mcp_server - INFO - 开始大学搜索: keyword=MIT, year=2026
+2025-12-05 19:23:28,777 - mcp_server - INFO - 大学搜索完成: 找到 5 所大学
+2025-12-05 19:23:28,780 - mcp_server - INFO - 开始排名查询: year=2026, country=None, top_n=10
+2025-12-05 19:23:28,783 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:23:28,786 - mcp_server - INFO - 开始排名查询: year=2026, country=CN, top_n=10
+2025-12-05 19:23:28,789 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:23:28,792 - mcp_server - INFO - 开始国家统计: year=2026, top_n=10
+2025-12-05 19:23:28,798 - mcp_server - INFO - 国家统计完成: 2026年共106个国家/地区
+2025-12-05 19:23:28,801 - mcp_server - INFO - 开始国家平均分对比: year=2026, top_n=10
+2025-12-05 19:23:28,806 - mcp_server - INFO - 国家平均分对比完成: 2026年前10个国家
+2025-12-05 19:23:28,808 - mcp_server - INFO - 开始排名变化查询: year=2026, top_n=10, direction=rise
+2025-12-05 19:23:28,813 - mcp_server - INFO - 排名变化查询完成: 2026年排名上升前10所
+2025-12-05 19:23:28,815 - mcp_server - INFO - 开始 Top 100 分布查询: year=2026
+2025-12-05 19:23:28,821 - mcp_server - INFO - Top 100 分布查询完成: 2026年涉及22个国家/地区
+2025-12-05 19:23:28,822 - mcp_server - INFO - 开始综合统计: year=2026
+2025-12-05 19:23:28,828 - mcp_server - INFO - 综合统计完成: 2026年
+2025-12-05 19:23:28,832 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:23:28,832 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:31:16,809 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:31:16,809 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:31:16,819 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:31:16,821 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:31:16,822 - mcp_server - INFO - 开始大学搜索: keyword=MIT, year=2026
+2025-12-05 19:31:16,826 - mcp_server - INFO - 大学搜索完成: 找到 5 所大学
+2025-12-05 19:31:16,829 - mcp_server - INFO - 开始排名查询: year=2026, country=None, top_n=10
+2025-12-05 19:31:16,830 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:31:16,833 - mcp_server - INFO - 开始排名查询: year=2026, country=CN, top_n=10
+2025-12-05 19:31:16,836 - mcp_server - INFO - 排名查询完成: 2026年前10名
+2025-12-05 19:31:16,839 - mcp_server - INFO - 开始国家统计: year=2026, top_n=10
+2025-12-05 19:31:16,846 - mcp_server - INFO - 国家统计完成: 2026年共106个国家/地区
+2025-12-05 19:31:16,888 - mcp_server - INFO - 开始国家平均分对比: year=2026, top_n=10
+2025-12-05 19:31:16,894 - mcp_server - INFO - 国家平均分对比完成: 2026年前10个国家
+2025-12-05 19:31:16,897 - mcp_server - INFO - 开始排名变化查询: year=2026, top_n=10, direction=rise
+2025-12-05 19:31:16,903 - mcp_server - INFO - 排名变化查询完成: 2026年排名上升前10所
+2025-12-05 19:31:16,906 - mcp_server - INFO - 开始 Top 100 分布查询: year=2026
+2025-12-05 19:31:16,910 - mcp_server - INFO - Top 100 分布查询完成: 2026年涉及22个国家/地区
+2025-12-05 19:31:16,912 - mcp_server - INFO - 开始综合统计: year=2026
+2025-12-05 19:31:16,917 - mcp_server - INFO - 综合统计完成: 2026年
+2025-12-05 19:31:16,920 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:31:16,921 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:31:25,495 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:31:25,495 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:31:25,504 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:31:25,506 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:37:32,753 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:37:32,763 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:37:32,763 - mcp_server - INFO - 开始排名查询: year=2026, country=US, top_n=5
+2025-12-05 19:37:32,766 - mcp_server - INFO - 排名查询完成: 2026年前5名
+2025-12-05 19:37:40,317 - mcp_server - INFO - 查询国家列表: year=2024
+2025-12-05 19:37:40,317 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:37:40,327 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:37:40,329 - mcp_server - INFO - 国家列表查询完成: 共104个国家/地区
+2025-12-05 19:38:34,990 - mcp_server - INFO - 查询国家列表: year=2024
+2025-12-05 19:38:34,990 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:38:35,000 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:38:35,001 - mcp_server - INFO - 国家列表查询完成: 共104个国家/地区
+2025-12-05 19:38:41,521 - mcp_server - INFO - 查询国家列表: year=2024
+2025-12-05 19:38:41,521 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:38:41,530 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:38:41,532 - mcp_server - INFO - 国家列表查询完成: 共104个国家/地区
+2025-12-05 19:38:48,039 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:38:48,039 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:38:48,049 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:38:48,050 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:38:55,527 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:38:55,527 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:38:55,537 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:38:55,538 - mcp_server - INFO - 国家列表查询完成: 共106个国家/地区
+2025-12-05 19:39:35,609 - mcp_server - INFO - 查询国家列表: year=2024
+2025-12-05 19:39:35,609 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:39:35,619 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:39:35,620 - mcp_server - INFO - 国家列表查询完成: 共104个国家/地区
+2025-12-05 19:39:42,045 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:39:42,045 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:39:42,056 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:39:42,057 - mcp_server - INFO - 国家列表查询完成: 共105个国家/地区
+2025-12-05 19:40:42,878 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:40:42,878 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:40:42,888 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:40:42,890 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:40:42,891 - mcp_server - INFO - 开始排名查询: year=2026, country=US, top_n=5
+2025-12-05 19:40:42,893 - mcp_server - INFO - 排名查询完成: 2026年前5名
+2025-12-05 19:40:42,894 - mcp_server - INFO - 开始排名查询: year=2026, country=China, top_n=5
+2025-12-05 19:40:42,899 - mcp_server - INFO - 排名查询完成: 2026年前5名
+2025-12-05 19:40:42,900 - mcp_server - INFO - 查询国家列表: year=2024
+2025-12-05 19:40:42,901 - mcp_server - INFO - 国家列表查询完成: 共104个国家/地区
+2025-12-05 19:40:42,903 - mcp_server - INFO - 查询国家列表: year=2026
+2025-12-05 19:40:42,905 - mcp_server - INFO - 国家列表查询完成: 共105个国家/地区
+2025-12-05 19:49:05,428 - mcp_server - INFO - 开始大学搜索: keyword=Seoul National University, year=None
+2025-12-05 19:49:05,428 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:49:05,439 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:49:05,443 - mcp_server - INFO - 大学搜索完成: 找到 2 所大学
+2025-12-05 19:49:09,612 - mcp_server - INFO - 开始大学搜索: keyword=Seoul National, year=None
+2025-12-05 19:49:09,612 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:49:09,621 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:49:09,625 - mcp_server - INFO - 大学搜索完成: 找到 2 所大学
+2025-12-05 19:50:41,566 - mcp_server - INFO - 开始大学搜索: keyword=Seoul National, year=None
+2025-12-05 19:50:41,567 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:50:41,577 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:50:41,580 - mcp_server - INFO - 大学搜索完成: 找到 2 所大学
+2025-12-05 19:51:02,511 - mcp_server - INFO - 开始大学搜索: keyword=Seoul National, year=None
+2025-12-05 19:51:02,511 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:51:02,521 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:51:02,524 - mcp_server - INFO - 大学搜索完成: 找到 2 所大学
+2025-12-05 19:51:02,528 - mcp_server - INFO - 开始大学搜索: keyword=MIT, year=None
+2025-12-05 19:51:02,532 - mcp_server - INFO - 大学搜索完成: 找到 5 所大学
+2025-12-05 19:51:02,534 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:51:02,536 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:53:00,467 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:53:00,468 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:53:00,479 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:53:00,481 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
+2025-12-05 19:53:40,557 - mcp_server - INFO - 查询可用年份
+2025-12-05 19:53:40,557 - mcp_server - INFO - 找到数据文件: G:\Desktop\mcp_guokao\qs_mcp\qs_cleaned.csv
+2025-12-05 19:53:40,568 - mcp_server - INFO - 数据加载成功！共 4504 条记录，涵盖 3 个年份，1966 所高校，223 个国家/地区
+2025-12-05 19:53:40,570 - mcp_server - INFO - 可用年份查询完成: [2026, 2025, 2024]
