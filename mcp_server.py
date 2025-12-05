@@ -1336,129 +1336,129 @@ async def get_top100_distribution(
         return _error_response("INTERNAL_ERROR", f"Top 100 分布查询失败: {str(e)}")
 
 
-@mcp.tool()
-async def get_summary(
-    year: int
-) -> str:
-    """
-    功能7: 综合统计
-    获取指定年份的综合统计摘要，包括基本信息、Top 10、国家分布等
+# @mcp.tool()
+# async def get_summary(
+#     year: int
+# ) -> str:
+#     """
+#     功能7: 综合统计
+#     获取指定年份的综合统计摘要，包括基本信息、Top 10、国家分布等
     
-    参数:
-        year: 年份（必填，如2024、2025、2026）
+#     参数:
+#         year: 年份（必填，如2024、2025、2026）
     
-    返回:
-        综合统计摘要（JSON格式）
-    """
-    try:
-        df = _load_data()
-        available_years = _get_available_years(df)
+#     返回:
+#         综合统计摘要（JSON格式）
+#     """
+#     try:
+#         df = _load_data()
+#         available_years = _get_available_years(df)
         
-        year_error = _validate_year(year, available_years)
-        if year_error:
-            return _error_response(
-                "INVALID_YEAR",
-                year_error,
-                {"available_years": available_years}
-            )
+#         year_error = _validate_year(year, available_years)
+#         if year_error:
+#             return _error_response(
+#                 "INVALID_YEAR",
+#                 year_error,
+#                 {"available_years": available_years}
+#             )
         
-        logger.info(f"开始综合统计: year={year}")
+#         logger.info(f"开始综合统计: year={year}")
         
-        df_year = df[df["Year"] == year].copy()
-        df_year["Country_Display"] = df_year["Country"].apply(_get_country_display)
-        df_year["Country_ISO"] = df_year["Country"].apply(_get_country_iso)
+#         df_year = df[df["Year"] == year].copy()
+#         df_year["Country_Display"] = df_year["Country"].apply(_get_country_display)
+#         df_year["Country_ISO"] = df_year["Country"].apply(_get_country_iso)
         
-        # 基本统计
-        total_unis = len(df_year)
-        ranked_unis = int(df_year["Rank"].notna().sum())
-        countries = int(df_year["Country_Display"].nunique())
+#         # 基本统计
+#         total_unis = len(df_year)
+#         ranked_unis = int(df_year["Rank"].notna().sum())
+#         countries = int(df_year["Country_Display"].nunique())
         
-        # 分数统计
-        score_col = "Overall_Score" if "Overall_Score" in df_year.columns else "Overall"
-        df_scored = df_year[df_year[score_col].notna()] if score_col in df_year.columns else pd.DataFrame()
+#         # 分数统计
+#         score_col = "Overall_Score" if "Overall_Score" in df_year.columns else "Overall"
+#         df_scored = df_year[df_year[score_col].notna()] if score_col in df_year.columns else pd.DataFrame()
         
-        data = {
-            "query": {
-                "year": year,
-                "available_years": available_years
-            },
-            "basic_info": {
-                "total_universities": total_unis,
-                "ranked_universities": ranked_unis,
-                "unranked_universities": total_unis - ranked_unis,
-                "countries_covered": countries,
-                "description": f"{year}年共有来自{countries}个国家/地区的{total_unis}所大学参与排名"
-            },
-            "top_10": [],
-            "top_5_countries": [],
-            "score_stats": None,
-            "comparison_with_prev_year": None
-        }
+#         data = {
+#             "query": {
+#                 "year": year,
+#                 "available_years": available_years
+#             },
+#             "basic_info": {
+#                 "total_universities": total_unis,
+#                 "ranked_universities": ranked_unis,
+#                 "unranked_universities": total_unis - ranked_unis,
+#                 "countries_covered": countries,
+#                 "description": f"{year}年共有来自{countries}个国家/地区的{total_unis}所大学参与排名"
+#             },
+#             "top_10": [],
+#             "top_5_countries": [],
+#             "score_stats": None,
+#             "comparison_with_prev_year": None
+#         }
         
-        # Top 10 大学
-        top10 = df_year[df_year["Rank"].notna()].nsmallest(10, "Rank")
-        for _, row in top10.iterrows():
-            rank = int(row["Rank"])
-            country_info = _normalize_country_output(row["Country"])
-            data["top_10"].append({
-                "rank": rank,
-                "name": row["University"],
-                "country": country_info
-            })
+#         # Top 10 大学
+#         top10 = df_year[df_year["Rank"].notna()].nsmallest(10, "Rank")
+#         for _, row in top10.iterrows():
+#             rank = int(row["Rank"])
+#             country_info = _normalize_country_output(row["Country"])
+#             data["top_10"].append({
+#                 "rank": rank,
+#                 "name": row["University"],
+#                 "country": country_info
+#             })
         
-        # Top 5 国家
-        country_counts = df_year["Country_Display"].value_counts().head(5)
-        for i, (country, count) in enumerate(country_counts.items(), 1):
-            pct = round(count / total_unis * 100, 1)
-            country_df = df_year[df_year["Country_Display"] == country]
-            iso_code = country_df["Country_ISO"].iloc[0] if len(country_df) > 0 else None
+#         # Top 5 国家
+#         country_counts = df_year["Country_Display"].value_counts().head(5)
+#         for i, (country, count) in enumerate(country_counts.items(), 1):
+#             pct = round(count / total_unis * 100, 1)
+#             country_df = df_year[df_year["Country_Display"] == country]
+#             iso_code = country_df["Country_ISO"].iloc[0] if len(country_df) > 0 else None
             
-            data["top_5_countries"].append({
-                "rank": i,
-                "country": {
-                    "iso_code": iso_code,
-                    "name": country
-                },
-                "count": int(count),
-                "percentage": pct
-            })
+#             data["top_5_countries"].append({
+#                 "rank": i,
+#                 "country": {
+#                     "iso_code": iso_code,
+#                     "name": country
+#                 },
+#                 "count": int(count),
+#                 "percentage": pct
+#             })
         
-        # 分数分布
-        if not df_scored.empty and score_col in df_scored.columns:
-            data["score_stats"] = {
-                "score_column": score_col,
-                "average": round(float(df_scored[score_col].mean()), 1),
-                "median": round(float(df_scored[score_col].median()), 1),
-                "maximum": round(float(df_scored[score_col].max()), 1),
-                "minimum": round(float(df_scored[score_col].min()), 1),
-                "std_deviation": round(float(df_scored[score_col].std()), 1)
-            }
+#         # 分数分布
+#         if not df_scored.empty and score_col in df_scored.columns:
+#             data["score_stats"] = {
+#                 "score_column": score_col,
+#                 "average": round(float(df_scored[score_col].mean()), 1),
+#                 "median": round(float(df_scored[score_col].median()), 1),
+#                 "maximum": round(float(df_scored[score_col].max()), 1),
+#                 "minimum": round(float(df_scored[score_col].min()), 1),
+#                 "std_deviation": round(float(df_scored[score_col].std()), 1)
+#             }
         
-        # 与去年对比
-        prev_year = year - 1
-        if prev_year in available_years:
-            df_prev = df[df["Year"] == prev_year]
-            prev_total = len(df_prev)
-            prev_ranked = int(df_prev["Rank"].notna().sum())
-            data["comparison_with_prev_year"] = {
-                "prev_year": prev_year,
-                "universities_change": total_unis - prev_total,
-                "ranked_change": ranked_unis - prev_ranked,
-                "description": f"相比{prev_year}年，参与大学{'增加' if total_unis > prev_total else '减少'}{abs(total_unis - prev_total)}所"
-            }
+#         # 与去年对比
+#         prev_year = year - 1
+#         if prev_year in available_years:
+#             df_prev = df[df["Year"] == prev_year]
+#             prev_total = len(df_prev)
+#             prev_ranked = int(df_prev["Rank"].notna().sum())
+#             data["comparison_with_prev_year"] = {
+#                 "prev_year": prev_year,
+#                 "universities_change": total_unis - prev_total,
+#                 "ranked_change": ranked_unis - prev_ranked,
+#                 "description": f"相比{prev_year}年，参与大学{'增加' if total_unis > prev_total else '减少'}{abs(total_unis - prev_total)}所"
+#             }
         
-        logger.info(f"综合统计完成: {year}年")
-        return _to_json(data, "success", f"{year}年综合统计数据")
+#         logger.info(f"综合统计完成: {year}年")
+#         return _to_json(data, "success", f"{year}年综合统计数据")
         
-    except Exception as e:
-        logger.error(f"综合统计失败: {str(e)}")
-        return _error_response("INTERNAL_ERROR", f"综合统计失败: {str(e)}")
+#     except Exception as e:
+#         logger.error(f"综合统计失败: {str(e)}")
+#         return _error_response("INTERNAL_ERROR", f"综合统计失败: {str(e)}")
 
 
 @mcp.tool()
 async def list_available_years() -> str:
     """
-    功能8: 查看可用年份
+    功能7: 查看可用年份
     列出数据中所有可用的年份及其数据统计
     
     参数:
@@ -1521,7 +1521,7 @@ async def list_countries(
     year: Optional[int] = None
 ) -> str:
     """
-    功能9: 查看国家列表
+    功能8: 查看国家列表
     列出数据中所有可用的国家/地区（包含 ISO 代码）
     
     参数:
